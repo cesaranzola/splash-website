@@ -3,14 +3,29 @@ body {
 	color: #404040;
 }
 
+.main-box {
+	padding: 0;
+	margin: 0;
+}
+
 /* =================
     Typography
    ================= */
 
 h1 {
 	font-size: 2.5rem;
-	text-shadow: #816fca;
+	text-shadow: 0 2px 1.5px #816fca;
 	font-weight: 400;
+}
+
+h2 {
+	font-size: 2.25rem;
+	margin: 0.167em 0;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.35;
 }
 
 .beta-text {
@@ -20,6 +35,12 @@ h1 {
 .subheading {
 	color: #575757;
 	font-weight: 900;
+	margin-bottom: 0.5em;
+}
+
+.beta-text,
+.subheading {
+	text-transform: uppercase;
 }
 
 /* =================
@@ -51,13 +72,13 @@ h1 {
 .main-content {
 	justify-content: center;
 	align-items: center;
-	gap: 2em;
 	padding: 2.5em 0 2.5em 2em;
 }
 
 .main-content p {
 	text-align: left;
-	margin-left: 3em;
+	margin-top: 1em;
+	padding: 0 1em 0 2em;
 }
 
 .img-main {
@@ -72,3 +93,18 @@ h1 {
 /* =================
     Media queries
    ================= */
+
+@media (min-width: 800px) {
+	.parent {
+		display: flex;
+	}
+
+	.intro,
+	.main-content {
+		width: 50%;
+        min-height: 100vh;
+	}
+	.intro {
+		padding: 2em;
+	}
+}
