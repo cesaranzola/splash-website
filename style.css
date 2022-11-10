@@ -64,6 +64,13 @@ p {
 /* =================
     Intro
    ================= */
+/*
+  Challenge: Apply a full background image
+    - Set the background of .intro to the image `intro-bg.png`
+    - The background image should scale to fill the entire
+      width and height of .intro while preserving its ratio
+*/
+
 
 .intro {
 	color: #fff;
@@ -114,5 +121,20 @@ p {
 	.main-content {
 		width: 50%;
 		min-height: 100vh;
+	}
+
+	.main-content {
+		padding: 0;
+	}
+
+	h1 {
+		/* font-size: 3.25rem; */
+		font-size: 2.5vw;
+	}
+	h2 {
+		font-size: 2.625rem;
+	}
+	.beta-text {
+		font-size: 1.25rem;
 	}
 }
