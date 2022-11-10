@@ -47,6 +47,12 @@ p {
 	text-transform: uppercase;
 }
 
+.fine-print {
+	font-size: 0.75rem;
+	letter-spacing: 1px;
+	color: #858585;
+}
+
 /* =================
     Flex Containers
    ================= */
@@ -61,6 +67,23 @@ p {
 	display: flex;
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+form input,
+form button {
+	margin: 0 2.5em 1em 2.5em;
+	padding: 0.5em;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+
 /* =================
     Intro
    ================= */
@@ -70,7 +93,6 @@ p {
     - The background image should scale to fill the entire
       width and height of .intro while preserving its ratio
 */
-
 
 .intro {
 	color: #fff;
